@@ -1,0 +1,10 @@
+name: ""
+secretName: ""
+isCA: false
+algorithm: "RSA"
+size: 4096
+dnsNames: []
+issuer:
+  name: ""
+  kind: Issuer
+labels: {}
