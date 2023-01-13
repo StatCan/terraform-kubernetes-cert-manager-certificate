@@ -1,0 +1,19 @@
+module "certificate" {
+  source = "git::https://gitlab.k8s.cloud.statcan.ca/cloudnative/terraform/modules/terraform-kubernetes-cert-manager-certificate.git?ref=v1.1.0"
+
+  name = var.name
+  namespace = "cert-manager-system"
+
+  dns_names = [
+    abc.example.com,
+    efg.example.com,
+  ]
+
+  issuer = {
+    name = var.cluster_issuer_name
+    kind = var.cluster_issuer_kind
+  }
+
+  ...
+}
+

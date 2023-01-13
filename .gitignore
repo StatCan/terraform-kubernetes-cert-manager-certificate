@@ -4,3 +4,7 @@ plan
 .terraform/plugins
 *.tfstate
 *.tfstate.backup
+.terraform.lock.hcl
+
+.terraform-docs.yml
+.pre-commit-config.yml
